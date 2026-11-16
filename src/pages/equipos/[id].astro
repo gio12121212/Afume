@@ -46,9 +46,8 @@ const { equipo } = Astro.props;
                 </div>
             </div>
         </div>
-        <a href={withBase("equipos/")}><h2>← Volver a equipos</h2></a>
         <h1 class="equipoSeccion">Historia del club</h1>
-        <section class="lineaDeTiempo">
+        <section id="historia">
             <div class="evento">
                 <div class="contenido">
                     <img src={withBase(equipo.card1Img)} alt={`Imagen de ${equipo.nombre}`} width="550px">
@@ -75,33 +74,84 @@ const { equipo } = Astro.props;
                 </div>
         </section>
         <h1 class="equipoSeccion">Títulos</h1>
-        <div id="scroll">
-            <div class="titulos">
+        <section id="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo1Img)} alt={`1° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo1}></div>
             </div>
-            <div class="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo2Img)} alt={`2° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo2}></div>
             </div>
-            <div class="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo3Img)} alt={`3° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo3}></div>
             </div>
-            <div class="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo1Img)} alt={`1° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo1}></div>
             </div>
-            <div class="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo2Img)} alt={`2° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo2}></div>
             </div>
-            <div class="titulos">
+            <div class="titulo">
                 <img src={withBase(equipo.titulo3Img)} alt={`3° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo3}></div>
             </div>
-        </div>
-        <h1 class="equipoSeccion">Actualidad del equipo</h1>
+        </section>
+        <h1 class="equipoSeccion">Plantel profesional actual</h1>
+        <section id="plantel">
+            <div class="posicion">
+                <h2>Arqueros</h2>
+                <div class="jugador">
+                    <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img class="ultimaImg" src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            </div>
+            <div class="posicion">
+                <h2>Defensores</h2>
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            </div>
+            <div class="posicion">
+                <h2>Mediocampistas</h2>
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            </div>
+            <div class="posicion">
+                <h2>Delanteros</h2>
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <img class="ultimaImg" src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            </div>
+        </section>
         <!--FOOTER-->
         <footer>
             <div id="redes">

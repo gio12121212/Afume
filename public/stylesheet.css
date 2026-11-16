@@ -452,14 +452,14 @@ footer p {
     margin-left: 70px;
 }
 
-.lineaDeTiempo {
+#historia {
     position: relative;
     width: 1250px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-.lineaDeTiempo::before {
+#historia::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -537,7 +537,7 @@ footer p {
     color: #163c2d;
 }
 
-#scroll{
+#titulos {
     display: flex;
     width: 1200px;
     height: 350px;
@@ -547,29 +547,29 @@ footer p {
     gap: 70px;
 }
 
-#scroll::-webkit-scrollbar {
+#titulos::-webkit-scrollbar {
     height: 10px;
 }
 
-#scroll::-webkit-scrollbar-button {
+#titulos::-webkit-scrollbar-button {
     display: none;
 }
 
-#scroll::-webkit-scrollbar-track {
+#titulos::-webkit-scrollbar-track {
     background: #40af7285;
     border-radius: 10px;
 }
 
-#scroll::-webkit-scrollbar-thumb {
+#titulos::-webkit-scrollbar-thumb {
     background: #163c2d;
     border-radius: 10px;
 }
 
-#scroll::-webkit-scrollbar-thumb:hover {
+#titulos::-webkit-scrollbar-thumb:hover {
     background: #1f5440;
 }
 
-.titulos img{
+.titulo img{
     border-radius: 10px;
     width: 350px;
     height: 220px;
@@ -577,8 +577,40 @@ footer p {
     box-shadow: 2px 2px 20px 1px #042b17b6;
 }
 
-.titulos h3, .titulos p{
+.titulo h3, .titulo p{
     text-align: start;
+}
+
+#plantel {
+    display: flex;
+    align-items: flex-start;
+}
+
+.posicion {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.posicion h2 {
+    grid-column: 1/-1;
+}
+
+.ultimaImg{
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.jugador {
+    background-color: #8aaf9c;
+}
+
+.jugador div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 /* slider copas */
