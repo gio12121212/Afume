@@ -115,9 +115,12 @@ footer p {
     font: 500 25px Montserrat;
 }
 
-#propósito {
-    font: 25px Montserrat;
+#proposito {
     margin: 0 30px 10px;
+}
+
+#proposito p {
+    font-size: 24px
 }
 
 /*HOME*/
