@@ -581,6 +581,36 @@ footer p {
     text-align: start;
 }
 
+#plantel h2 {
+    text-align: start;
+    margin-left: 70px;
+}
+
+.posicion {
+    display: flex;
+    margin: 0 70px 0 70px;
+    gap: 50px;
+}
+
+.jugador {
+    background-color: #bbd6c8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
+}
+
+.rostro {
+    border-radius: 15px;
+}
+
+.jugador div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*
 #plantel {
     display: flex;
     align-items: flex-start;
@@ -602,9 +632,7 @@ footer p {
     justify-self: center;
 }
 
-.jugador {
-    background-color: #8aaf9c;
-}
+
 
 .jugador div {
     display: flex;
@@ -612,6 +640,7 @@ footer p {
     align-items: center;
     gap: 15px;
 }
+*/
 
 /* slider copas */
 

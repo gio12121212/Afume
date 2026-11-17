@@ -104,21 +104,35 @@ const { equipo } = Astro.props;
         </section>
         <h1 class="equipoSeccion">Plantel profesional actual</h1>
         <section id="plantel">
+            <h2>Arqueros</h2>
             <div class="posicion">
-                <h2>Arqueros</h2>
                 <div class="jugador">
-                    <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
                     <h3>Juan Strumia</h3>
                     <div>
                         <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
                         <p>27 años</p>
                     </div>
                 </div>
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img class="ultimaImg" src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/ramirez godoy cruz.jpg")} alt="sin foto">
+                    <h3>Roberto Ramírez</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>30 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/cláa godoy cruz.jpg")} alt="sin foto">
+                    <h3>Nicolas Cláa</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>22 años</p>
+                    </div>
+                </div>
             </div>
+            <h2>Defensores</h2>
             <div class="posicion">
-                <h2>Defensores</h2>
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
@@ -130,8 +144,8 @@ const { equipo } = Astro.props;
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
             </div>
+            <h2>Mediocampistas</h2>
             <div class="posicion">
-                <h2>Mediocampistas</h2>
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
@@ -143,8 +157,8 @@ const { equipo } = Astro.props;
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
             </div>
+            <h2>Delanteros</h2>
             <div class="posicion">
-                <h2>Delanteros</h2>
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
                 <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
