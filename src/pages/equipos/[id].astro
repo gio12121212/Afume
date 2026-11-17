@@ -11,9 +11,11 @@ export function getStaticPaths() {
 
 const { equipo } = Astro.props;
 ---
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{equipo.nombre} - Historia</title>
         <meta name="description" content={`Historia de ${equipo.nombre}`} />
         <link rel="stylesheet" href={withBase("stylesheet.css")} type="text/css">
