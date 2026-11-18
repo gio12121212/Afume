@@ -77,8 +77,7 @@ footer {
     padding: 20px;
 }
 
-footer h1,
-h3 {
+footer h1,  h3 {
     font-weight: bold;
     font-family: Montserrat;
     color: #042b17;
@@ -415,29 +414,37 @@ footer p {
 }
 
 #escudo {
-    background-color: #207744;
+    background-color: #bbd6c8f1;
     padding: 15px;
     border-radius: 15px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
 }
 
-#datos-equipo h1,
-#datos-equipo h3 {
-    background-color: #207744;
+#datos-equipo h1, #datos-equipo h3 {
+    background-color: #bbd6c8f1;
     width: fit-content;
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
 }
 
 #clasico {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #207744;
+    background-color: #bbd6c8f1;
     width: fit-content;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
+}
+
+#clasico p {
+    font-weight: bold;
+    color: #042b17;
+    font-size: 18.72px;
 }
 
 #clasico img {
@@ -883,7 +890,6 @@ footer p {
         margin: 6px auto;
     }
 
-    /* escudos de equipos */
     .divisiones {
         width: 100%;
         gap: 0 16px;
@@ -893,13 +899,11 @@ footer p {
         width: 90px;
     }
 
-    /* página de cada equipo */
     #datos-equipo {
         width: calc(100% - 20px);
         border-radius: 25px;
     }
 
-    /* las cajitas con nombre, fundación y clásico no se salen */
     #datos-equipo h1,
     #datos-equipo h3,
     #clasico {
