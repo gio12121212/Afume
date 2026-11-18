@@ -537,7 +537,7 @@ footer p {
     color: #163c2d;
 }
 
-#titulos {
+#scroll-titulos {
     display: flex;
     width: 1200px;
     height: 350px;
@@ -547,25 +547,25 @@ footer p {
     gap: 70px;
 }
 
-#titulos::-webkit-scrollbar {
+#scroll-titulos::-webkit-scrollbar {
     height: 10px;
 }
 
-#titulos::-webkit-scrollbar-button {
+#scroll-titulos::-webkit-scrollbar-button {
     display: none;
 }
 
-#titulos::-webkit-scrollbar-track {
+#scroll-titulos::-webkit-scrollbar-track {
     background: #40af7285;
     border-radius: 10px;
 }
 
-#titulos::-webkit-scrollbar-thumb {
+#scroll-titulos::-webkit-scrollbar-thumb {
     background: #163c2d;
     border-radius: 10px;
 }
 
-#titulos::-webkit-scrollbar-thumb:hover {
+#scroll-titulos::-webkit-scrollbar-thumb:hover {
     background: #1f5440;
 }
 
@@ -579,6 +579,38 @@ footer p {
 
 .titulo h3, .titulo p{
     text-align: start;
+}
+
+.scroll-jugadores {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    overflow: auto;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 70px;
+}
+
+.scroll-jugadores::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-jugadores::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scroll-jugadores::-webkit-scrollbar-track {
+    background: #40af7285;
+    border-radius: 10px;
+}
+
+.scroll-jugadores::-webkit-scrollbar-thumb {
+    background: #163c2d;
+    border-radius: 10px;
+}
+
+.scroll-jugadores::-webkit-scrollbar-thumb:hover {
+    background: #1f5440;
 }
 
 #plantel h2 {
@@ -596,7 +628,7 @@ footer p {
     background-color: #bbd6c8;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 2px 2px 20px 1px #042b17b6;
+    box-shadow: 0 0 20px #042b17b6;
 }
 
 .rostro {

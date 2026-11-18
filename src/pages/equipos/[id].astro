@@ -76,7 +76,7 @@ const { equipo } = Astro.props;
                 </div>
         </section>
         <h1 class="equipoSeccion">Títulos</h1>
-        <section id="titulos">
+        <section id="scroll-titulos">
             <div class="titulo">
                 <img src={withBase(equipo.titulo1Img)} alt={`1° hito de ${equipo.nombre}`}>
                 <div class="texto" set:html={equipo.titulo1}></div>
@@ -132,40 +132,229 @@ const { equipo } = Astro.props;
                 </div>
             </div>
             <h2>Defensores</h2>
-            <div class="posicion">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            <div class="posicion scroll-jugadores">
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
             </div>
             <h2>Mediocampistas</h2>
-            <div class="posicion">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            <div class="posicion scroll-jugadores">
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
             </div>
             <h2>Delanteros</h2>
-            <div class="posicion">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
-                <img class="ultimaImg" src={withBase("imagenes/jugador default.jpg")} alt="sin foto">
+            <div class="posicion scroll-jugadores">
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
+                <div class="jugador">
+                    <img class="rostro" src={withBase("imagenes/strumia godoy cruz.jpg")} alt={`Jugador de ${equipo.nombre}`}>
+                    <h3>Juan Strumia</h3>
+                    <div>
+                        <img src={withBase("imagenes/argentina.png")} alt="argentina" width="50px">
+                        <p>27 años</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!--FOOTER-->
