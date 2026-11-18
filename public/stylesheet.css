@@ -858,3 +858,232 @@ footer p {
 .new p {
     margin: 0 0 12px;
 }
+
+/* esto es para celulares */
+@media (max-width: 760px) {
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        margin: 16px 16px 28px;
+        padding: 16px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .links {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+
+    /* tablas de partidos */
+    .next_matches {
+        width: calc(100% - 20px);
+        margin: 30px auto;
+        font-size: 13px;
+        table-layout: fixed;
+    }
+
+    .next_matches td {
+        overflow-wrap: anywhere;
+    }
+
+    .td_left {
+        padding-right: 6px;
+    }
+
+    .td_right {
+        padding-left: 6px;
+    }
+
+    .next_matches td img {
+        display: block;
+        width: 30px;
+        margin: 6px auto;
+    }
+
+    /* escudos de equipos */
+    .divisiones {
+        width: 100%;
+        gap: 0 16px;
+    }
+
+    .divisiones img {
+        width: 90px;
+    }
+
+    /* página de cada equipo */
+    #datos-equipo {
+        width: calc(100% - 20px);
+        border-radius: 25px;
+    }
+
+    /* las cajitas con nombre, fundación y clásico no se salen */
+    #datos-equipo h1,
+    #datos-equipo h3,
+    #clasico {
+        max-width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+
+    #clasico p {
+        overflow-wrap: anywhere;
+    }
+
+    .equipoSeccion,
+    #plantel h2 {
+        margin-left: 16px;
+    }
+
+    /* la línea de tiempo pasa a una sola columna */
+    #historia {
+        width: 100%;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    #historia::before,
+    .punto {
+        display: none;
+    }
+
+    .evento {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+    }
+
+    .evento .contenido,
+    .evento:nth-child(even) .contenido {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0 auto;
+    }
+
+    .evento .fecha,
+    .evento:nth-child(even) .fecha {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .evento .texto {
+        font-size: 18px;
+    }
+
+    #scroll-titulos {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+
+    #scroll-titulos {
+        height: auto;
+    }
+
+    .titulo img {
+        width: 260px;
+        height: 170px;
+    }
+
+    .posicion,
+    .scroll-jugadores {
+        width: auto;
+        margin: 0 16px;
+        padding: 20px 4px;
+        gap: 20px;
+        overflow-x: auto;
+    }
+
+    .jugador {
+        flex-shrink: 0;
+    }
+
+
+    .slider {
+        --visible: 1;
+    }
+
+    .slide {
+        height: 260px;
+    }
+
+    /* páginas de copas */
+    .fotologro {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .txtcopas {
+        padding: 10px 16px;
+    }
+
+    .copa {
+        box-sizing: border-box;
+    }
+
+    /* noticias: la foto arriba y el texto abajo */
+    .cuerponew {
+        margin: 5px 10px 20px;
+    }
+
+    .news {
+        margin: 10px;
+    }
+
+    .noticia {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .noticia > img {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* sobre nosotros */
+    #info_personal {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 10px;
+    }
+
+    #info_personal p {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    #proposito p {
+        font-size: 18px;
+    }
+
+    /* footer */
+    #info_empresa {
+        gap: 0 12px;
+    }
+
+    #info_empresa p {
+        overflow-wrap: anywhere;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
