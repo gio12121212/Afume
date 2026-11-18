@@ -27,10 +27,8 @@ p {
 
 /*NAVBAR*/
 nav {
-    /*MÁRGENES*/
     padding: 20px;
     margin: 10px 50px 50px 50px;
-    /*ESTILO*/
     background-color: #58a778;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.63);
     border-radius: 20px;
@@ -41,7 +39,6 @@ nav ul {
     padding: 0;
     margin: 0;
     gap: 20px;
-    /*ESTILO TEXTO*/
     font: bold 20px Montserrat;
     color: #163c2d;
 }
@@ -581,6 +578,37 @@ footer p {
     text-align: start;
 }
 
+#plantel h2 {
+    text-align: start;
+    margin-left: 70px;
+}
+
+.posicion {
+    display: flex;
+    margin: 0 70px 0 70px;
+    gap: 90px;
+}
+
+.jugador {
+    background-color: #bbd6c8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #042b17b6;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+.rostro {
+    border-radius: 15px;
+}
+
+.jugador div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 .scroll-jugadores {
     display: flex;
     width: 1200px;
@@ -588,7 +616,6 @@ footer p {
     overflow: auto;
     padding: 20px;
     margin: 0 auto;
-    gap: 70px;
 }
 
 .scroll-jugadores::-webkit-scrollbar {
@@ -612,67 +639,6 @@ footer p {
 .scroll-jugadores::-webkit-scrollbar-thumb:hover {
     background: #1f5440;
 }
-
-#plantel h2 {
-    text-align: start;
-    margin-left: 70px;
-}
-
-.posicion {
-    display: flex;
-    margin: 0 70px 0 70px;
-    gap: 50px;
-}
-
-.jugador {
-    background-color: #bbd6c8;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #042b17b6;
-}
-
-.rostro {
-    border-radius: 15px;
-}
-
-.jugador div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-/*
-#plantel {
-    display: flex;
-    align-items: flex-start;
-}
-
-.posicion {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.posicion h2 {
-    grid-column: 1/-1;
-}
-
-.ultimaImg{
-    grid-column: 1/-1;
-    justify-self: center;
-}
-
-
-
-.jugador div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-*/
 
 /* slider copas */
 
