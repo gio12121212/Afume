@@ -2,34 +2,32 @@
     {
         "id": "csir",
         "nombre": "Independiente Rivadavia",
-        "escudo": "/imagenes/csir.webp",
+        "escudo": "/imagenes/escudos/csir.webp",
         "division": "Liga Profesional Argentina",
         "fundacion":"24 de enero de 1913",
-        "hinchadaFondo": "/imagenes/hinchada csir.jpg",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada csir.jpg",
         "clasico": "Gimnasia y Esgrima de Mendoza",
-        "escudoClasico": "/imagenes/gimnasia.png",
-        "historia": "<p>sapos del parque</p>"
+        "escudoClasico": "/imagenes/escudos/gimnasia.png"
     },
     {
         "id": "gimnasia",
-        "nombre": "Gimnasia y Esgrima de Mendoza",
-        "escudo": "/imagenes/gimnasia.png",
+        "nombre": "Gimnasia y Esgrima",
+        "escudo": "/imagenes/escudos/gimnasia.png",
         "division": "Liga Profesional Argentina",
         "fundacion": "30 de octubre de 1908",
-        "hinchadaFondo": "/imagenes/hinchada gimnasia.jpg",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada gimnasia.jpeg",
         "clasico": "Independiente Rivadavia",
-        "escudoClasico": "/imagenes/csir.webp",
-        "historia": "<p>micropartícula</p>"
+        "escudoClasico": "/imagenes/escudos/csir.webp"
     },
     {
-        "id": "godoycruz",
+        "id": "godoyCruz",
         "nombre": "Godoy Cruz",
-        "escudo": "/imagenes/godoy cruz.png",
+        "escudo": "/imagenes/escudos/godoy cruz.png",
         "division": "Liga Profesional Argentina",
         "fundacion": "1 de junio de 1921",
-        "hinchadaFondo": "/imagenes/hinchada godoy cruz.webp",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada godoy cruz.webp",
         "clasico": "Andes Talleres",
-        "escudoClasico": "/imagenes/andes talleres.svg",
+        "escudoClasico": "/imagenes/escudos/andes talleres.svg",
         
         "card1": "<h3>Fundación del Club</h3><p><b>Godoy Cruz nació como institución en el año 1921</b></p><p>Todo comenzó cuando un grupo de amigos, reunidos en el Bar Victoria (ubicado enfrente de la plaza departamental en ese entonces), decidieron fundar un club, aprovechando el auge que había en la época. Fue así como nació, el 1 de junio de 1921, el Club Sportivo Godoy Cruz con la presidencia novicia de Don Romero Garay.</p>",
         "card1Img": "/imagenes/card 1 godoy cruz.webp",
@@ -200,12 +198,151 @@
     {
         "id": "maipu",
         "nombre": "Deportivo Maipú",
-        "escudo": "/imagenes/maipu.svg",
+        "escudo": "/imagenes/escudos/maipu.svg",
         "division": "Primera Nacional",
         "fundacion": "16 de diciembre de 1927",
-        "hinchadaFondo": "/imagenes/hinchada maipu.jpg",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada maipu.jpg",
         "clasico": "Gutierrez",
-        "escudoClasico": "/imagenes/gutierrez.svg",
-        "historia": "<p>BOTEHIELO</p>" 
+        "escudoClasico": "/imagenes/escudos/gutierrez.svg"
+    },
+    {
+        "id": "hlh",
+        "nombre": "Huracán Las Heras",
+        "escudo": "/imagenes/escudos/hlh.png",
+        "division": "Federal A",
+        "fundacion": "24 de diciembre de 1939",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada hlh.jpg",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "sanMartin",
+        "nombre": "San Martín",
+        "escudo": "/imagenes/escudos/san martin.png",
+        "division": "Federal A",
+        "fundacion": "22 de diciembre de 1927",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada san martin.jpg",
+        "clasico": "Palmira",
+        "escudoClasico": "/imagenes/escudos/palmira.png"
+    },
+    {
+        "id": "fadep",
+        "nombre": "Fundación Amigos por el Deporte",
+        "escudo": "/imagenes/escudos/fadep.svg",
+        "division": "Federal A",
+        "fundacion": "2 de octubre de 2012",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada fadep.png",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "chacras",
+        "nombre": "Academia Chacras de Coria",
+        "escudo": "/imagenes/escudos/chacras.svg",
+        "division": "Liga Mendocina",
+        "fundacion": "20 de marzo de 1921",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada chacras.jpg",
+        "clasico": "Luján SC",
+        "escudoClasico": "imagenes/escudos/lujan.png"
+    },
+    {
+        "id": "andesTalleres",
+        "nombre": "Andes Talleres",
+        "escudo": "/imagenes/escudos/andes talleres.svg",
+        "division": "Liga Mendocina",
+        "fundacion": "9 de julio de 1933",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada andes talleres.jpg",
+        "clasico": "Godoy Cruz",
+        "escudoClasico": "imagenes/escudos/godoy cruz.png"
+    },
+    {
+        "id": "argentino",
+        "nombre": "Club Atlético Argentino",
+        "escudo": "/imagenes/escudos/argentino.png",
+        "division": "Liga Mendocina",
+        "fundacion": "10 de enero de 1924",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada argentino.jpg",
+        "clasico": "Deportivo Guaymallén",
+        "escudoClasico": "imagenes/escudos/guaymallen.png"
+    },
+    {
+        "id": "palmira",
+        "nombre": "Club Atlético Palmira",
+        "escudo": "/imagenes/escudos/palmira.png",
+        "division": "Liga Mendocina",
+        "fundacion": "31 de enero de 1912",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada palmira.jpeg",
+        "clasico": "San Martín",
+        "escudoClasico": "imagenes/escudos/san martin.png"
+    },
+    {
+        "id": "cec",
+        "nombre": "Club Empleados de Comercio",
+        "escudo": "/imagenes/escudos/cec.png",
+        "division": "Liga Mendocina",
+        "fundacion": "23 de mayo de 2003",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada cec.jpeg",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "guaymallen",
+        "nombre": "Deportivo Guaymallén",
+        "escudo": "/imagenes/escudos/guaymallen.png",
+        "division": "Liga Mendocina",
+        "fundacion": "25 de agosto de 1918",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada guaymallen.webp",
+        "clasico": "Argentino",
+        "escudoClasico": "imagenes/escudos/argentino.png"
+    },
+    {
+        "id": "murialdo",
+        "nombre": "Leonardo Murialdo",
+        "escudo": "/imagenes/escudos/murialdo.svg",
+        "division": "Liga Mendocina",
+        "fundacion": "9 de julio de 1942",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada murialdo.jpg",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "lujan",
+        "nombre": "Luján Sport Club",
+        "escudo": "/imagenes/escudos/lujan.png",
+        "division": "Liga Mendocina",
+        "fundacion": "15 de julio de 1922",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada lujan.jpg",
+        "clasico": "Academia Chacras de Coria",
+        "escudoClasico": "imagenes/escudos/chacras.svg"
+    },
+    {
+        "id": "cdRivadavia",
+        "nombre": "Centro Deportivo Rivadavia",
+        "escudo": "/imagenes/escudos/cd rivadavia.png",
+        "division": "Liga Mendocina",
+        "fundacion": "21 de agosto de 1977",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada cd rivadavia.jpg",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "uncuyo",
+        "nombre": "Universidad Nacional de Cuyo",
+        "escudo": "/imagenes/escudos/uncuyo.webp",
+        "division": "Liga Mendocina",
+        "fundacion": "14 de agosto de 1940",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada uncuyo.jpg",
+        "clasico": "",
+        "escudoClasico": ""
+    },
+    {
+        "id": "gutierrez",
+        "nombre": "Gutierrez Sport Club",
+        "escudo": "/imagenes/escudos/gutierrez.svg",
+        "division": "Liga Mendocina",
+        "fundacion": "17 de junio de 1923",
+        "hinchadaFondo": "/imagenes/hinchadas/hinchada gutierrez.jpeg",
+        "clasico": "Deportivo Maipu",
+        "escudoClasico": "imagenes/escudos/maipu.svg"
     }
 ]

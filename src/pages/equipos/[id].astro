@@ -28,13 +28,15 @@ const titulos = [1, 2, 3, 4, 5, 6]
     }))
     .filter((t) => t.img && t.texto);
 
-const jugadores = (prefijo, cantidad) =>
+const datos = equipo as Record<string, string>;
+
+const jugadores = (prefijo: string, cantidad: number) =>
     Array.from({ length: cantidad }, (_, i) => i + 1)
         .map((n) => ({
-            img: equipo[`${prefijo}${n}Img`],
-            nombre: equipo[`${prefijo}${n}`],
-            pais: equipo[`${prefijo}${n}Pais`],
-            edad: equipo[`${prefijo}${n}Edad`],
+            img: datos[`${prefijo}${n}Img`],
+            nombre: datos[`${prefijo}${n}`],
+            pais: datos[`${prefijo}${n}Pais`],
+            edad: datos[`${prefijo}${n}Edad`],
         }))
         .filter((j) => j.nombre);
 
@@ -42,6 +44,17 @@ const arqueros = jugadores("arquero", 3);
 const defensores = jugadores("defensa", 10);
 const medios = jugadores("medio", 10);
 const delanteros = jugadores("delantero", 7);
+
+const dt = datos.dt
+    ? { img: datos.dtImg, nombre: datos.dt, pais: datos.dtPais, edad: datos.dtEdad }
+    : null;
+
+const tienePlantel =
+    arqueros.length > 0 ||
+    defensores.length > 0 ||
+    medios.length > 0 ||
+    delanteros.length > 0 ||
+    dt !== null;
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -73,11 +86,15 @@ const delanteros = jugadores("delantero", 7);
                 <img id="escudo" src={withBase(equipo.escudo)} alt={`Escudo de ${equipo.nombre}`} width="200px">
                 <h1>{equipo.nombre}</h1>
                 <h3>Fundado el {equipo.fundacion}</h3>
-                <h3>Actualmente disputa la {equipo.division}</h3>
-                <div id="clasico">
-                    <p>Es clásico de {equipo.clasico}</p>
-                    <img src={withBase(equipo.escudoClasico)} alt={`Escudo de ${equipo.nombre}`} width="30px">
-                </div>
+                <h3>Actualmente disputa: {equipo.division}</h3>
+                {equipo.clasico && (
+                    <div id="clasico">
+                        <p>Es clásico de {equipo.clasico}</p>
+                        {equipo.escudoClasico && (
+                            <img src={withBase(equipo.escudoClasico)} alt={`Escudo de ${equipo.clasico}`} width="30px">
+                        )}
+                    </div>
+                )}
             </div>
         </div>
         {eventos.length > 0 && (
@@ -106,72 +123,84 @@ const delanteros = jugadores("delantero", 7);
                 ))}
             </section>
         )}
-        <h1 class="equipoSeccion">Plantel profesional actual</h1>
-        <section id="plantel">
-            <h2>Arqueros</h2>
-            <div class="posicion">
-                {arqueros.map((j) => (
-                    <div class="jugador">
-                        <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
-                        <h3>{j.nombre}</h3>
-                        <div>
-                            <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
-                            <p>{j.edad}</p>
+        {tienePlantel && (
+            <h1 class="equipoSeccion">Plantel profesional actual</h1>
+            <section id="plantel">
+                {arqueros.length > 0 && (
+                    <h2>Arqueros</h2>
+                    <div class="posicion">
+                        {arqueros.map((j) => (
+                            <div class="jugador">
+                                <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
+                                <h3>{j.nombre}</h3>
+                                <div>
+                                    <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
+                                    <p>{j.edad}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+                {defensores.length > 0 && (
+                    <h2>Defensores</h2>
+                    <div class="posicion scroll-jugadores">
+                        {defensores.map((j) => (
+                            <div class="jugador">
+                                <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
+                                <h3>{j.nombre}</h3>
+                                <div>
+                                    <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
+                                    <p>{j.edad}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+                {medios.length > 0 && (
+                    <h2>Mediocampistas</h2>
+                    <div class="posicion scroll-jugadores">
+                        {medios.map((j) => (
+                            <div class="jugador">
+                                <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
+                                <h3>{j.nombre}</h3>
+                                <div>
+                                    <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
+                                    <p>{j.edad}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+                {delanteros.length > 0 && (
+                    <h2>Delanteros</h2>
+                    <div class="posicion scroll-jugadores">
+                        {delanteros.map((j) => (
+                            <div class="jugador">
+                                <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
+                                <h3>{j.nombre}</h3>
+                                <div>
+                                    <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
+                                    <p>{j.edad}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+                {dt && (
+                    <h2>Director Técnico</h2>
+                    <div class="posicion">
+                        <div class="jugador">
+                            <img class="rostro" src={withBase(dt.img)} alt={`Director técnico de ${equipo.nombre}`}>
+                            <h3>{dt.nombre}</h3>
+                            <div>
+                                <img src={withBase(dt.pais)} alt={`País de ${dt.nombre}`} width="50px">
+                                <p>{dt.edad}</p>
+                            </div>
                         </div>
                     </div>
-                ))}
-            </div>
-            <h2>Defensores</h2>
-            <div class="posicion scroll-jugadores">
-                {defensores.map((j) => (
-                    <div class="jugador">
-                        <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
-                        <h3>{j.nombre}</h3>
-                        <div>
-                            <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
-                            <p>{j.edad}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <h2>Mediocampistas</h2>
-            <div class="posicion scroll-jugadores">
-                {medios.map((j) => (
-                    <div class="jugador">
-                        <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
-                        <h3>{j.nombre}</h3>
-                        <div>
-                            <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
-                            <p>{j.edad}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <h2>Delanteros</h2>
-            <div class="posicion scroll-jugadores">
-                {delanteros.map((j) => (
-                    <div class="jugador">
-                        <img class="rostro" src={withBase(j.img)} alt={`Jugador de ${equipo.nombre}`}>
-                        <h3>{j.nombre}</h3>
-                        <div>
-                            <img src={withBase(j.pais)} alt={`País de ${j.nombre}`} width="50px">
-                            <p>{j.edad}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <h2>Director Técnico</h2>
-            <div class="posicion">
-                <div class="jugador">
-                    <img class="rostro" src={withBase(equipo.dtImg)} alt={`Jugador de ${equipo.nombre}`}>
-                    <h3>{equipo.dt}</h3>
-                    <div>
-                        <img src={withBase(equipo.dtPais)} alt={`País de ${equipo.dt}`} width="50px">
-                        <p>{equipo.dtEdad}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                )}
+            </section>
+)}
         <!--FOOTER-->
         <footer>
         <div id="redes">

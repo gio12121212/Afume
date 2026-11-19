@@ -4,6 +4,9 @@ import equipos from '../../data/equipos.json';
 
 const ligaProfesional = equipos.filter((e) => e.division === 'Liga Profesional Argentina');
 const primeraNacional = equipos.filter((e) => e.division === 'Primera Nacional');
+const federalA = equipos.filter((e) => e.division === 'Federal A');
+const ligaMendocina = equipos.filter((e) => e.division === 'Liga Mendocina');
+
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -44,20 +47,15 @@ const primeraNacional = equipos.filter((e) => e.division === 'Primera Nacional')
     </div>
     <h2>FEDERAL A</h2>
     <div class="divisiones">
-        <img src={withBase("imagenes/hlh.png")} alt="HURACAN LAS HERAS">
-        <img src={withBase("imagenes/fadep.svg")} alt="fundacion amigos deportivos">
-        <img src={withBase("imagenes/san martin.png")} alt="san martin">
+        {federalA.map((equipo) => (
+            <a href={withBase(`equipos/${equipo.id}/`)}><img src={withBase(equipo.escudo)} alt={`Escudo de ${equipo.nombre}`}></a>
+        ))}
     </div>
     <h2>LIGA MENDOCINA</h2>
     <div class="divisiones">
-        <img src={withBase("imagenes/argentino.png")} alt="club argentino de mendoza">
-        <img src={withBase("imagenes/chacras.svg")} alt="club chacras de coria">
-        <img src={withBase("imagenes/andes talleres.svg")} alt="andes talleres">
-        <img src={withBase("imagenes/guaymallen.png")} alt="fundacion guaymallen">
-        <img src={withBase("imagenes/murialdo.svg")} alt="murialdo">
-        <img src={withBase("imagenes/lujan.png")} alt="lujan sport">
-        <img src={withBase("imagenes/gutierrez.svg")} alt="gutierrez sport">
-        <img src={withBase("imagenes/palmito.png")} alt="palmira de san martin">
+        {ligaMendocina.map((equipo) => (
+            <a href={withBase(`equipos/${equipo.id}/`)}><img src={withBase(equipo.escudo)} alt={`Escudo de ${equipo.nombre}`}></a>
+        ))}
     </div>
     
     <!--FOOTER-->
