@@ -4,11 +4,41 @@
         "nombre": "Independiente Rivadavia",
         "escudo": "/imagenes/csir.webp",
         "division": "Liga Profesional Argentina",
-        "fundacion":"24 de enero de 1913",
+        "fundacion": "24 de enero de 1913",
         "hinchadaFondo": "/imagenes/hinchada csir.jpg",
         "clasico": "Gimnasia y Esgrima de Mendoza",
         "escudoClasico": "/imagenes/gimnasia.png",
-        "historia": "<p>sapos del parque</p>"
+        "historia": "<p>caudillos del parque</p>",
+
+        "card1": "<h3>Fundación del Club Atlético Independiente</h3><p><b>El 24 de enero de 1913 nació la institución que daría origen al actual Club Sportivo Independiente Rivadavia.</b></p><p>La entidad fue fundada en la ciudad de Mendoza bajo el nombre de <b>Club Atlético Independiente</b>, con <b>Pedro Castro</b> como su primer presidente. Su creación marcó el comienzo de una historia que se convertiría en una de las más importantes del fútbol mendocino.</p><p>En sus primeros años, el club comenzó a construir una identidad deportiva que lo llevaría a convertirse en uno de los grandes protagonistas de la provincia.</p>",
+        "card1Img": "/imagenes/card 1 independiente rivadavia.webp",
+        "card1fecha": "24 de enero de 1913",
+
+        "card2": "<h3>La fusión con Sportivo Rivadavia</h3><p><b>El 4 de enero de 1919 se produjo la unión entre el Club Atlético Independiente y el Club Sportivo Rivadavia, dando origen al actual Club Sportivo Independiente Rivadavia.</b></p><p>La fusión fue impulsada principalmente por <b>Bautista Gargantini (hijo)</b>, quien tuvo un papel fundamental en la unión de ambas instituciones y asumió la conducción del nuevo club.</p><p>Este acontecimiento consolidó la identidad institucional de la Lepra mendocina y dio comienzo a una nueva etapa en su historia deportiva.</p>",
+        "card2Img": "/imagenes/card 2 independiente rivadavia.webp",
+        "card2fecha": "4 de enero de 1919",
+
+        "card3": "<h3>El primer título nacional: Campeón de la Copa Argentina</h3><p><b>El 5 de noviembre de 2025, Independiente Rivadavia conquistó el título más importante de su historia al consagrarse campeón de la Copa Argentina.</b></p><p>En una final histórica disputada en Córdoba, la Lepra empató <b>2 a 2 frente a Argentinos Juniors</b> y consiguió la victoria por <b>5 a 3 en la definición por penales</b>.</p><p>Con este triunfo, Independiente Rivadavia se convirtió en el <b>primer club de Mendoza en ganar un título oficial nacional organizado por la AFA</b>, obteniendo además la clasificación a la Copa Libertadores 2026.</p>",
+        "card3Img": "/imagenes/card 3 independiente rivadavia.webp",
+        "card3fecha": "5 de noviembre de 2025",
+
+
+        "titulo1": "<h3>Liga Mendocina de Fútbol</h3><p></p><p>1924, 1925, 1926, 1927, 1928, 1929, 1932, 1935, 1936, 1938, 1940, 1945, 1960, 1961, 1962, 1965, 1967, 1970, 1972, 1976, 1978, 1992/1993, 1993/1994, 2007 y 2010.</p>",
+        "titulo1Img": "/imagenes/independiente rivadavia campeon liga mendocina.jpg",
+
+        "titulo2": "<h3>Torneo Regional</h3><p></p><p>1968, 1980 y 1982.</p>",
+        "titulo2Img": "/imagenes/independiente rivadavia campeon torneo regional.jpg",
+
+        "titulo3": "<h3>Torneo Argentino A</h3><p>1998/1999 y 2006/2007.</p>",
+        "titulo3Img": "/imagenes/independiente rivadavia campeonargentinoA.jpg",
+        
+        "titul4": "<h3>Copa Argentina</h3><p>2025.</p>",
+        "titulo4Img": "/imagenes/independiente rivadavia campeon copa argentina.jpg"
+
+
+
+
+
     },
     {
         "id": "gimnasia",
@@ -19,7 +49,40 @@
         "hinchadaFondo": "/imagenes/hinchada gimnasia.jpg",
         "clasico": "Independiente Rivadavia",
         "escudoClasico": "/imagenes/csir.webp",
-        "historia": "<p>micropartícula</p>"
+        "historia": "<p>micropartícula</p>",
+
+        "card1": "<h3>Fundación del Club</h3><p><b>El 30 de agosto de 1908 nació el Club Atlético Gimnasia y Esgrima de Mendoza.</b></p><p>La institución fue fundada por un grupo de socios y jóvenes vinculados a la actividad deportiva mendocina. Sus orígenes estuvieron relacionados con el antiguo Club de Pelota, del cual surgieron integrantes que impulsaron la creación de una entidad dedicada al desarrollo de distintas disciplinas deportivas.</p><p>Con el paso del tiempo, Gimnasia se convirtió en uno de los clubes más tradicionales de Mendoza, siendo reconocido como el decano del fútbol mendocino y adoptando los colores blanco y negro que lo identifican hasta la actualidad.</p>",
+
+        "card1Img": "/imagenes/card 1 gimnasia y esgrima.webp",
+        "card1fecha": "30 de agosto de 1908",
+
+        "card2": "<h3>Inauguración del estadio en el Parque</h3><p><b>El 25 de marzo de 1934 se inauguró el estadio de Gimnasia y Esgrima, ubicado en el Parque General San Martín.</b></p><p>La apertura de su campo de deportes representó un acontecimiento fundamental para el crecimiento institucional del club y para el fútbol mendocino.</p><p>Con el paso de las décadas, el estadio se convirtió en un símbolo de la institución y fue bautizado con el nombre de <b>Víctor Antonio Legrotaglie</b>, en homenaje al máximo ídolo futbolístico de su historia.</p>",
+
+        "card2Img": "/imagenes/card 2 gimnasia y esgrima.webp",
+        "card2fecha": "25 de marzo de 1934",
+
+        "card3": "<h3>El histórico ascenso a Primera División</h3><p><b>El 11 de octubre de 2025, Gimnasia y Esgrima consiguió el ascenso a la Primera División del fútbol argentino.</b></p><p>El Lobo enfrentó a Deportivo Madryn en la final de la Primera Nacional, disputada en el estadio Ciudad de Vicente López. Después de igualar 1 a 1 durante los 90 minutos, el conjunto mendocino se impuso por <b>3 a 0 en la definición por penales</b>.</p><p>La conquista significó el regreso del Blanquinegro a la máxima categoría del fútbol argentino después de más de cuatro décadas, coronando una campaña histórica para la institución y para el deporte mendocino.</p>",
+
+        "card3Img": "/imagenes/card 3 gimnasia y esgrima.webp",
+        "card3fecha": "11 de octubre de 2025",
+
+
+        "titulo1": "<h3>Liga Mendocina de Fútbol</h3><p>1922, 1923, 1931, 1933, 1937, 1939, 1949, 1952, 1964, 1969, 1974, 1977, 1980, 1981, 1982, 1983, 1986, 1991, 1997/1998 y 2001.</p>",
+
+        "titulo1Img": "/imagenes/gimnasia campeon liga mendocina.jpg",
+
+        "titulo2": "<h3>Primera Nacional</h3><p>2025.</p>",
+
+        "titulo2Img": "/imagenes/gimnasia campeon primera nacional 2025.jpg",
+
+        "titulo3": "<h3>Copas Mendoza</h3><p>2019.</p>",
+
+        "titulo3Img": "/imagenes/gimnasia campeon copa mendoza 2019.jpg",
+
+        "titulo4": "<h3>Torneo Argentino B</h3><p>2005/2006, 2013/2014.</p>",
+
+        "titulo4Img" : "/imagenes/gye campeon argentinob.webp"
+
     },
     {
         "id": "godoycruz",
@@ -31,17 +94,15 @@
         "clasico": "Andes Talleres",
         "escudoClasico": "/imagenes/andes talleres.svg",
         "color": "2220ac",
-        
         "card1": "<h3>Fundación del Club</h3><p><b>Godoy Cruz nació como institución en el año 1921</b></p><p>Todo comenzó cuando un grupo de amigos, reunidos en el Bar Victoria (ubicado enfrente de la plaza departamental en ese entonces), decidieron fundar un club, aprovechando el auge que había en la época. Fue así como nació, el <b>1 de junio de 1921</b>, <b>el Club Sportivo Godoy Cruz</b> con la presidencia novicia de <b>Don Romero Garay</b>.</p>",
         "card1Img": "/imagenes/card 1 godoy cruz.webp",
         "card1fecha": "1 de junio de 1921",
-        "card2":"<h3>La fusión con el Club Bodega Antonio Tomba</h3><p><b>Durante el año 1930 se concretó la fusión entre el Club Sportivo Godoy Cruz y el Club de la Bodega Antonio Tomba.</b></p><p>Esta alianza fue producto de la necesidad de unificar el esfuerzo de dos instituciones arraigadas en el departamento, que se unieron para formar un club más poderoso y con mayor proyección: el <b>Club Deportivo Godoy Cruz Antonio Tomba</b>.</p>",
+        "card2": "<h3>La fusión con el Club Bodega Antonio Tomba</h3><p><b>Durante el año 1930 se concretó la fusión entre el Club Sportivo Godoy Cruz y el Club de la Bodega Antonio Tomba.</b></p><p>Esta alianza fue producto de la necesidad de unificar el esfuerzo de dos instituciones arraigadas en el departamento, que se unieron para formar un club más poderoso y con mayor proyección: el <b>Club Deportivo Godoy Cruz Antonio Tomba</b>.</p>",
         "card2Img": "/imagenes/card 2 godoy cruz.webp",
         "card2fecha": "1930",
         "card3": "<h3>El primer campeonato de Liga</h3><p><b>Godoy Cruz es proclamado campeón por primera vez en su historia, al empatar en condición de local 1 a 1 ante el Club Nacional Vélez Sarsfield Pacífico.</b></p><p>El gol bodeguero lo marcó <b>Domingo Godoy</b>.</p>",
         "card3Img": "/imagenes/card 3 godoy cruz.webp",
         "card3fecha": "8 de octubre de 1944",
-        
         "titulo1": "<h3>Liga mendocina</h3><p>1944, 1947, 1950, 1951, 1954, 1968, 1989, 1990, 2012.</p>",
         "titulo1Img": "/imagenes/godoy cruz campeon liga mendocina.jpeg",
         "titulo2": "<h3>Torneo del interior</h3><p>1993/1994</p>",
@@ -58,6 +119,6 @@
         "hinchadaFondo": "/imagenes/hinchada maipu.jpg",
         "clasico": "Gutierrez",
         "escudoClasico": "/imagenes/gutierrez.svg",
-        "historia": "<p>BOTEHIELO</p>" 
+        "historia": "<p>BOTEHIELO</p>"
     }
 ]
