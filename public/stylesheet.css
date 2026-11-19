@@ -285,14 +285,11 @@ footer p {
 }
 
 /*NEXT MATCHES*/
-
 .next_matches {
-    /*MÁRGENES*/
-    width: min(900px, 100% - 20px); /* 900px como máximo, menos si la pantalla es chica */
+    width: min(900px, 100% - 20px);
     height: auto;
     margin: 60px auto;
     border-collapse: collapse;
-    /*ESTILO*/
     background-color: #58a778;
     font-weight: bold;
     font-family: Montserrat;
@@ -327,7 +324,6 @@ footer p {
     width: 40px;
 }
 
-/* La misma tabla, ajustada al espacio del fixture del inicio. */
 .homecss .next_matches {
     width: 100%;
     table-layout: fixed;
