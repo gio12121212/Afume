@@ -1,8 +1,3 @@
-/*
-mira la linea 456
-
-*/
-
 /*TODA LA PÁGINA*/
 body {
     margin: 0;
@@ -27,10 +22,8 @@ p {
 
 /*NAVBAR*/
 nav {
-    /*MÁRGENES*/
     padding: 20px;
     margin: 10px 50px 50px 50px;
-    /*ESTILO*/
     background-color: #58a778;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.63);
     border-radius: 20px;
@@ -38,10 +31,10 @@ nav {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     gap: 20px;
-    /*ESTILO TEXTO*/
     font: bold 20px Montserrat;
     color: #163c2d;
 }
@@ -80,8 +73,7 @@ footer {
     padding: 20px;
 }
 
-footer h1,
-h3 {
+footer h1, h3, h4 {
     font-weight: bold;
     font-family: Montserrat;
     color: #042b17;
@@ -131,23 +123,7 @@ footer p {
     background-size: cover;
     background-position: center;
     padding: 1px 0 48px;
-    /*nimation: cambiarFondo 15s infinite;*/
 }
-
-/*@keyframes cambiarFondo{
-    0%, 30%{
-        background-image: url(imagenes/fgambarte.jpg);
-    }
-    33%, 63%{
-        background-image: url(imagenes/Leprac1.jpg);
-    }
-    66%, 97%{
-        background-image: url();
-    }
-    100%{
-        background-image: url();
-    }
-}*/
 
 .homecss {
     display: grid;
@@ -178,6 +154,10 @@ footer p {
     align-items: center;
 }
 
+.fixture .next_matches {
+    background-color: #bbd6c8;
+}
+
 .homecss h2 {
     margin: 0 0 16px;
     font-size: clamp(24px, 3vw, 32px);
@@ -194,29 +174,27 @@ footer p {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    gap: 24px;
-    padding: 30px 0;
 }
 
 .homecss .titulo {
-    box-sizing: border-box;
-    width: 100%;
     margin: 0;
     padding: 18px 24px;
-    border-radius: 20px;
-    background: #58a778;
-    font-size: clamp(42px, 5vw, 68px);
+    color: #58a778;
+    font-size: 100px;
+    text-align: end;
+    text-shadow: 2px 2px 10px rgba(22, 24, 22, 0.699), 2px 2px 10px rgba(22, 24, 22, 0.699);
 }
 
 .homecss .desc {
     box-sizing: border-box;
     width: 85%;
     margin: 0;
-    padding: 30px;
+    padding: 0 20px;
     border-radius: 24px;
-    background: rgba(224, 241, 230, 0.95);
+    color: #bbd6c8;
     font-size: 20px;
-    text-align: left;
+    text-align: end;
+    font-weight: bold;
 }
 
 .homecss .news {
@@ -229,18 +207,6 @@ footer p {
     color: #163c2d;
     font-weight: 700;
     text-underline-offset: 4px;
-}
-
-#index-body nav ul {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-#index-body nav .links {
-    font-size: clamp(12px, 1.2vw, 18px);
-    padding: 16px 8px;
 }
 
 @media (max-width: 760px) {
@@ -287,15 +253,69 @@ footer p {
     }
 }
 
-/*NEXT MATCHES*/
+/* news */
 
+.cuerponew {
+    background-color: #58a778;
+    border: 2px solid #163c2d;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 5px 50px 20px 50px;
+}
+
+.news {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 20px;
+}
+
+.new {
+    flex: 1;
+    min-width: 0;
+}
+
+#principal_new {
+    font-size: 27px;
+}
+
+.noticia {
+    display: flex;
+    flex: 1 1 450px;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #58a778;
+    border: 2px solid #163c2d;
+    border-radius: 12px;
+}
+
+.noticia>img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.new h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.new p {
+    margin: 0 0 12px;
+}
+
+/*NEXT MATCHES*/
 .next_matches {
-    /*MÁRGENES*/
-    width: 900px;
+    width: min(900px, 100% - 20px);
     height: auto;
     margin: 60px auto;
     border-collapse: collapse;
-    /*ESTILO*/
     background-color: #58a778;
     font-weight: bold;
     font-family: Montserrat;
@@ -330,7 +350,6 @@ footer p {
     width: 40px;
 }
 
-/* La misma tabla, ajustada al espacio del fixture del inicio. */
 .homecss .next_matches {
     width: 100%;
     table-layout: fixed;
@@ -393,7 +412,7 @@ footer p {
     justify-content: center;
     align-items: center;
     gap: 0 50px;
-    width: 950px;
+    width: min(950px, 100%);
 }
 
 .divisiones img {
@@ -412,35 +431,43 @@ footer p {
 
 /*SPECIFIC TEAM*/
 #datos-equipo {
-    width: 800px;
+    width: min(800px, 100% - 20px);
     margin: 0 auto;
     border-radius: 50px;
 }
 
 #escudo {
-    background-color: #207744;
+    background-color: #bbd6c8f1;
     padding: 15px;
     border-radius: 15px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
 }
 
-#datos-equipo h1,
-#datos-equipo h3 {
-    background-color: #207744;
+#datos-equipo h1, #datos-equipo h3 {
+    background-color: #bbd6c8f1;
     width: fit-content;
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
 }
 
 #clasico {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #207744;
+    background-color: #bbd6c8f1;
     width: fit-content;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px 1px #042b17b6;
+}
+
+#clasico p {
+    font-weight: bold;
+    color: #042b17;
+    font-size: 18.72px;
 }
 
 #clasico img {
@@ -454,7 +481,7 @@ footer p {
 
 #historia {
     position: relative;
-    width: 1250px;
+    width: min(1250px, 100%);
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -539,7 +566,7 @@ footer p {
 
 #scroll-titulos {
     display: flex;
-    width: 1200px;
+    width: min(1200px, 100% - 40px);
     height: 350px;
     overflow: auto;
     padding: 20px;
@@ -581,14 +608,45 @@ footer p {
     text-align: start;
 }
 
+#plantel h2 {
+    text-align: start;
+    margin-left: 70px;
+}
+
+.posicion {
+    display: flex;
+    margin: 0 70px 0 70px;
+    gap: 90px;
+    overflow-x: auto;
+}
+
+.jugador {
+    background-color: #bbd6c8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #042b17b6;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+.rostro {
+    border-radius: 15px;
+}
+
+.jugador div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 .scroll-jugadores {
     display: flex;
-    width: 1200px;
+    width: min(1200px, 100% - 180px);
     height: auto;
     overflow: auto;
     padding: 20px;
     margin: 0 auto;
-    gap: 70px;
 }
 
 .scroll-jugadores::-webkit-scrollbar {
@@ -612,67 +670,6 @@ footer p {
 .scroll-jugadores::-webkit-scrollbar-thumb:hover {
     background: #1f5440;
 }
-
-#plantel h2 {
-    text-align: start;
-    margin-left: 70px;
-}
-
-.posicion {
-    display: flex;
-    margin: 0 70px 0 70px;
-    gap: 50px;
-}
-
-.jugador {
-    background-color: #bbd6c8;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #042b17b6;
-}
-
-.rostro {
-    border-radius: 15px;
-}
-
-.jugador div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-/*
-#plantel {
-    display: flex;
-    align-items: flex-start;
-}
-
-.posicion {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.posicion h2 {
-    grid-column: 1/-1;
-}
-
-.ultimaImg{
-    grid-column: 1/-1;
-    justify-self: center;
-}
-
-
-
-.jugador div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-*/
 
 /* slider copas */
 
@@ -779,7 +776,7 @@ footer p {
 
 .txtcopas {
     text-align: left;
-    padding: 35px;
+    padding: 20px;
 }
 
 .fotologro {
@@ -805,62 +802,54 @@ footer p {
 .volver:hover {
     background-color: #88bda1;
 }
-
-/* news */
-
-.cuerponew {
-    background-color: #58a778;
-    border: 2px solid #163c2d;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 5px 50px 20px 50px;
-}
-
-.news {
+.campeones {
+    clear: both;  
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
-    align-items: stretch;
-    margin: 20px;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    padding: 0 20px;
 }
 
-.new {
-    flex: 1;
-    min-width: 0;
+.campeon {
+    width: 200px;
+    background-color: #bbd6c8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #042b17b6;
+    transition: transform 0.2s;
 }
 
-.noticia {
-    display: flex;
-    flex: 1 1 450px;
-    min-width: 0;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #58a778;
-    border: 2px solid #163c2d;
-    border-radius: 12px;
+.campeon:hover {
+    transform: translateY(-5px);
 }
 
-.noticia>img {
-    width: 180px;
-    height: 130px;
+.campeon img {
+    width: 100%;
+    height: 150px;
     object-fit: cover;
-    border-radius: 8px;
-    flex-shrink: 0;
+    display: block;
 }
 
-.new h2 {
-    margin: 0 0 10px;
-    font-size: 24px;
+.campeon h2 {
+    margin: 10px 0 0;
+    font-size: 30px;
 }
 
-.new p {
-    margin: 0 0 12px;
+.campeon h3 {
+    margin: 5px 10px 15px;
 }
-
 /* esto es para celulares */
 @media (max-width: 760px) {
+    .campeones {
+        gap: 15px;
+    }
+
+    .campeon {
+        width: calc(50% - 10px);
+    }
     
     img {
         max-width: 100%;
@@ -917,7 +906,6 @@ footer p {
         margin: 6px auto;
     }
 
-    /* escudos de equipos */
     .divisiones {
         width: 100%;
         gap: 0 16px;
@@ -927,13 +915,11 @@ footer p {
         width: 90px;
     }
 
-    /* página de cada equipo */
     #datos-equipo {
         width: calc(100% - 20px);
         border-radius: 25px;
     }
 
-    /* las cajitas con nombre, fundación y clásico no se salen */
     #datos-equipo h1,
     #datos-equipo h3,
     #clasico {
@@ -1033,7 +1019,7 @@ footer p {
     }
 
     .txtcopas {
-        padding: 10px 16px;
+        padding: 5px 16px;
     }
 
     .copa {

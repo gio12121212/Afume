@@ -26,18 +26,17 @@ import { withBase } from '../utils/paths';
         
         <!--CUERPO DE PÁGINA-->
         
-        <h1>Independiente Rivadavia rescató un empate ante Gimnasia (M) y los dos se metieron en playoff</h1>
+        <h1>¡Godoy Cruz le ganó la final a Tristán Suárez y vuelve a Primera División!</h1>
         <div class="cuerponew">
             <div class="noticia">
-                <img src={withBase("imagenes/independiente-rivadavia-gimnasia.webp")} alt="imagen noticia">
+                <img src={withBase("imagenes/noticia1FOTO.webp")} alt="imagen noticia">
                 <div class="new">
-                    <p>
-                        En el cierre de la fase de grupos, Independiente Rivadavia (M) salvó la ropa ante Gimnasia (M) y rescató un empate por 1-1
-                        con un agónico gol de Luis Díaz, en un clásico que contó con un expulsado por cada lado. Antes, había sido Germán Guiffrey 
-                        quien había abierto el marcador para los locales, sobre el final del primer tiempo. Así, los dos equipos mendocinos se metieron en playoffs 
+                    <p id="principal_new">
+                        El 15 de noviembre, en Córdoba, Godoy Cruz venció 3-1 a Tristán Suárez en la final de la Primera Nacional y se quedó
+                        con el primer ascenso a la Liga Profesional, apenas un año después de haber perdido la categoría.
                     </p>
-                    <a href="https://www.tycsports.com/liga-profesional-de-futbol/argentina-torneo-clausura-2026-gimnasia-mendoza-vs-independiente-riv-m-fecha-16-id770547.html" target="_blank">
-                        <p>Ir a la noticia</p>
+                    <a href="https://www.lanacion.com.ar/deportes/futbol/godoy-cruz-vs-tristan-suarez-en-vivo-nid15112026/" target="_blank">
+                        <p><b>Ir a la noticia</b></p>
                     </a>
                 </div>
             </div>
@@ -46,15 +45,16 @@ import { withBase } from '../utils/paths';
         <h2>Últimas noticias</h2>
         <div class="news">
             <div class="noticia">
-                <img src={withBase("imagenes/noticia1FOTO.webp")} alt="imagen noticia">
+                <img src={withBase("imagenes/independiente-rivadavia-gimnasia.webp")} alt="imagen noticia">
                 <div class="new">
-                    <h2>Godoy Cruz le ganó la final a Tristán Suárez y vuelve a Primera División</h2>
+                    <h2>Independiente Rivadavia rescató un empate ante Gimnasia (M) y los dos se metieron en playoff</h2>
                     <p>
-                        El 15 de noviembre, en Córdoba, Godoy Cruz venció 3-1 a Tristán Suárez en la final de la Primera Nacional y se quedó
-                        con el primer ascenso a la Liga Profesional, apenas un año después de haber perdido la categoría.
+                        En el cierre de la fase previa Independiente Rivadavia (M) salvó la ropa ante Gimnasia (M) y rescató un empate por 1-1
+                        con un agónico gol de Luis Díaz, en un clásico que contó con un expulsado por cada lado. Antes, había sido Germán Guiffrey 
+                        quien había abierto el marcador para los locales, sobre el final del primer tiempo. Así, los dos equipos mendocinos se metieron en playoffs.
                     </p>
-                    <a href="https://www.lanacion.com.ar/deportes/futbol/godoy-cruz-vs-tristan-suarez-en-vivo-nid15112026/" target="_blank">
-                        <p>Ir a la noticia</p>
+                    <a href="https://www.tycsports.com/liga-profesional-de-futbol/argentina-torneo-clausura-2026-gimnasia-mendoza-vs-independiente-riv-m-fecha-16-id770547.html" target="_blank">
+                        <p><b>Ir a la noticia</b></p>
                     </a>
                 </div>
             </div>
@@ -63,40 +63,36 @@ import { withBase } from '../utils/paths';
                 <div class="new">
                     <h2>José Florentín, la baja sensible que tendrá Independiente Rivadavia para los octavos con Boca</h2>
                     <p>
-                       La fase regular del Torneo Clausura llegó a su fin y Boca ya sabe que enfrentará a Independiente Rivadavia 
-                       por los octavos de final en la Bombonera. Para el duelo con el que ambos equipos comenzarán su aventura en 
+                        La fase regular del Torneo Clausura llegó a su fin y Boca ya sabe que enfrentará a Independiente Rivadavia 
+                        por los octavos de final en la Bombonera. Para el duelo con el que ambos equipos comenzarán su aventura en 
                         los playoffs, la visita tendrá en José Florentín una baja significativa.   
                     </p>
                     <a href="https://www.tycsports.com/boca-juniors/jose-florentin-la-significativa-baja-que-tendra-independiente-rivadavia-para-los-octavos-con-boca-id770881.html" target="_blank">
-                        <p>Ir a la noticia</p>
+                        <p><b>Ir a la noticia</b></p>
                     </a>
                 </div>
             </div>
 
         </div>
-
+        
         <footer>
-            <div id="redes">
-                <a href="https://x.com/soytarufa" target="_blank"><img src={withBase("imagenes/x.svg")} alt="twitter afume"></a>
-                <a href="https://instagram.com/afumendoza" target="_blank"><img src={withBase("imagenes/ig.svg")} alt="instagram afume"></a>
-            </div>
-            <h1>CONTACTO</h1>
-            <h3>Agrupación Fútbol de Mendoza (AFUME)</h3>
-            <div id="info_empresa">
-                <img src={withBase("imagenes/ubicacion.svg")} alt="ubicación afume">
-                <p>Pedro Molina y Perú - Ciudad de Mendoza.</p>
-                <img src={withBase("imagenes/correo.svg")} alt="correo afume">
-                <p>support.afume@gmail.com</p>
-                <img src={withBase("imagenes/teléfono.svg")} alt="teléfono afume">
-                <p>+54 9 261 623-4614</p>
-            </div>
-            <div>
-                <img src={withBase("imagenes/afume logo.svg")} alt="afume logo" width="400px">
-            </div>
-            <p>Copyright © 2026 AFUME | Todos los derechos reservados.</p>
-        </footer>
+        <div id="redes">
+            <a href="https://instagram.com/afumendoza" target="_blank"><img src={withBase("imagenes/ig.svg")} alt="instagram afume"></a>
+        </div>
+        <h1>CONTACTO</h1>
+        <h3>Agrupación Fútbol de Mendoza (AFUME)</h3>
+        <div id="info_empresa">
+            <img src={withBase("imagenes/correo.svg")} alt="correo afume">
+            <p>support.afume@gmail.com</p>
+            <img src={withBase("imagenes/teléfono.svg")} alt="teléfono afume">
+            <p>+54 9 261 623-4614</p>
+        </div>
+        <div>
+            <img src={withBase("imagenes/afume logo.svg")} alt="afume logo" width="400px">
+        </div>
+        <p>Copyright © 2026 AFUME | Todos los derechos reservados.</p>
+    </footer>
     </body>
 </html> 
 
-<!-- ACLARACION: por motivos de tiempo y de que realmente no somos un diario esta pagina solo redirige a noticias de otros diarios,
- nosotros nos encargamos de hacer visible las notcias del futbol mendocino, Gracias -->
+<!-- ACLARACION: por motivos de tiempo y de que realmente no somos un diario esta pagina solo redirige a noticias de otros diarios, nosotros nos encargamos de hacer visible las notcias del futbol mendocino, Gracias -->
