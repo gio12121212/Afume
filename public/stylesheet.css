@@ -1,8 +1,3 @@
-/*
-mira la linea 456
-
-*/
-
 /*TODA LA PÁGINA*/
 body {
     margin: 0;
@@ -565,7 +560,7 @@ footer p {
     display: flex;
     margin: 0 70px 0 70px;
     gap: 90px;
-    overflow-x: auto; /* si no entran los jugadores, se desliza de costado */
+    overflow-x: auto;
 }
 
 .jugador {
