@@ -93,26 +93,16 @@
         "hinchadaFondo": "/imagenes/hinchada godoy cruz.webp",
         "clasico": "Andes Talleres",
         "escudoClasico": "/imagenes/andes talleres.svg",
-<<<<<<< HEAD
-        "color": "2220ac",
-        "card1": "<h3>Fundación del Club</h3><p><b>Godoy Cruz nació como institución en el año 1921</b></p><p>Todo comenzó cuando un grupo de amigos, reunidos en el Bar Victoria (ubicado enfrente de la plaza departamental en ese entonces), decidieron fundar un club, aprovechando el auge que había en la época. Fue así como nació, el <b>1 de junio de 1921</b>, <b>el Club Sportivo Godoy Cruz</b> con la presidencia novicia de <b>Don Romero Garay</b>.</p>",
-        "card1Img": "/imagenes/card 1 godoy cruz.webp",
-        "card1fecha": "1 de junio de 1921",
-        "card2": "<h3>La fusión con el Club Bodega Antonio Tomba</h3><p><b>Durante el año 1930 se concretó la fusión entre el Club Sportivo Godoy Cruz y el Club de la Bodega Antonio Tomba.</b></p><p>Esta alianza fue producto de la necesidad de unificar el esfuerzo de dos instituciones arraigadas en el departamento, que se unieron para formar un club más poderoso y con mayor proyección: el <b>Club Deportivo Godoy Cruz Antonio Tomba</b>.</p>",
-=======
         
         "card1": "<h3>Fundación del Club</h3><p><b>Godoy Cruz nació como institución en el año 1921</b></p><p>Todo comenzó cuando un grupo de amigos, reunidos en el Bar Victoria (ubicado enfrente de la plaza departamental en ese entonces), decidieron fundar un club, aprovechando el auge que había en la época. Fue así como nació, el 1 de junio de 1921, el Club Sportivo Godoy Cruz con la presidencia novicia de Don Romero Garay.</p>",
         "card1Img": "/imagenes/card 1 godoy cruz.webp",
         "card1fecha": "1 de junio de 1921",
         "card2":"<h3>La fusión con el Club Bodega Antonio Tomba</h3><p><b>Durante el año 1930 se concretó la fusión entre el Club Sportivo Godoy Cruz y el Club de la Bodega Antonio Tomba</b>.</p><p>Esta alianza fue producto de la necesidad de unificar el esfuerzo de dos instituciones arraigadas en el departamento, que se unieron para formar un club más poderoso y con mayor proyección: el Club Deportivo Godoy Cruz Antonio Tomba.</p>",
->>>>>>> main
         "card2Img": "/imagenes/card 2 godoy cruz.webp",
         "card2fecha": "1930",
         "card3": "<h3>El primer campeonato de Liga</h3><p><b>Godoy Cruz es proclamado campeón por primera vez en su historia, al empatar en condición de local 1 a 1 ante el Club Nacional Vélez Sarsfield Pacífico</b>.</p><p>El gol bodeguero lo marcó Domingo Godoy.</p>",
         "card3Img": "/imagenes/card 3 godoy cruz.webp",
         "card3fecha": "8 de octubre de 1944",
-<<<<<<< HEAD
-=======
         "card4": "<h3>El Primer Torneo Nacional</h3><p><b>El día 26 de mayo de 1974, Godoy Cruz se consagró ganador de la primera rueda de la Liga Mendocina de Fútbol de ese año y se ganó un lugar en el Torneo Nacional</b>.</p><p>Su presentación no fue del todo buena, pero sirvió para sentar las bases de la presencia en el plano nacional.</p>",
         "card4Img": "/imagenes/card 4 godoy cruz.webp",
         "card4fecha": "26 de mayo de 1974",
@@ -132,7 +122,6 @@
         "card9Img": "/imagenes/card 9 godoy cruz.webp",
         "card9fecha": "2017/2018",
         
->>>>>>> main
         "titulo1": "<h3>Liga mendocina</h3><p>1944, 1947, 1950, 1951, 1954, 1968, 1989, 1990, 2012.</p>",
         "titulo1Img": "/imagenes/godoy cruz campeon liga mendocina.jpeg",
         "titulo2": "<h3>Torneo del interior</h3><p>1993/1994</p>",
